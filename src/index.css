@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(to bottom, #ffccff, #ccffff);
+  background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+  margin: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   color: #333;
   padding: 20px;
