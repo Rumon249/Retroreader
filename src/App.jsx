@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import BedtimeStory from './stories/BedtimeStory'
 import AdventureStory from './stories/AdventureStory'
 import FairyStory from './stories/FairyStory'
+import './App.css'
 
 function App() {
   return (
