@@ -1,17 +1,19 @@
-import './Story.css'; // Optional: for custom styling
+import { useParams } from 'react-router-dom';
 
-export default function StoryPage({ text, onWordClick }) {
+const StoryPage = () => {
+  const { storyId } = useParams();
+
+  // Format story name from URL slug
+  const title = storyId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
   return (
-    <div className="story-page">
-      {text.split(" ").map((word, index) => (
-        <span
-          key={index}
-          className="word"
-          onClick={() => onWordClick(word.replace(/[.,]/g, ''))}
-        >
-          {word + ' '}
-        </span>
-      ))}
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-4">{title}</h1>
+      <p className="text-lg">Your interactive e-reader will go here!</p>
+
+      {/* Example: <EReader storyId={storyId} /> */}
     </div>
   );
-}
+};
+
+export default StoryPage;
