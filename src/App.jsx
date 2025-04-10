@@ -1,31 +1,26 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import BedtimeStory from './stories/BedtimeStory'
 import AdventureStory from './stories/AdventureStory'
-import FairyStory from './stories/FairyStory'
-<<<<<<< HEAD
+import FairyStory from './stories/PrincessStory'
 import './App.css'
-=======
-<<<<<<< HEAD
-import './App.css'
-=======
 import InteractiveStory from './stories/animations' 
->>>>>>> animation
->>>>>>> 279802f1d98ee77e6f3425239f23c164dbb20e1d
+
 
 function App() {
   return (
     <Router>
       <div className="app-container">
-        <h1 className="title">✨ Y2K Reader ✨</h1>
+        <h1 className="title">✨ Retro Reader ✨</h1>
+
 
         <nav>
           <Link to="/story/bedtime">🛏 Bedtime</Link> |{' '}
           <Link to="/story/adventure">🗺 Adventure</Link> |{' '}
-          <Link to="/story/fairy">🧚 Fairy</Link>
+          <Link to="/story/fairy">🧚 Princess</Link>
           <Link to="/story/animations">Interactive Story</Link>
         </nav>
-
-        <Routes>
+\
+<Routes>
           <Route path="/" element={<p>Select a story to begin!</p>} />
           <Route path="/story/bedtime" element={<BedtimeStory />} />
           <Route path="/story/adventure" element={<AdventureStory />} />
@@ -34,7 +29,11 @@ function App() {
         </Routes>
       </div>
     </Router>
+
   )
 }
 
 export default App
+
+
+
