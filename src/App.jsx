@@ -1,24 +1,29 @@
-import { useState } from 'react';
-import StoryPage from './components/StoryPage';
-import './App.css'; // Optional: for styling
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import BedtimeStory from './stories/BedtimeStory'
+import AdventureStory from './stories/AdventureStory'
+import FairyStory from './stories/FairyStory'
 
 function App() {
-  const [clickedWord, setClickedWord] = useState(null);
-
-  const storyText = "Once upon a time in a colorful world, children loved reading magical stories filled with wonder.";
-
-  const handleWordClick = (word) => {
-    setClickedWord(word);
-    alert(`Definition for "${word}" will go here!`);
-    // Later you can replace alert with a modal or fetch from an API
-  };
-
   return (
-    <div className="app-container">
-      <h1 className="title">✨ Y2K Reader ✨</h1>
-      <StoryPage text={storyText} onWordClick={handleWordClick} />
-    </div>
-  );
+    <Router>
+      <div className="app-container">
+        <h1 className="title">✨ Y2K Reader ✨</h1>
+
+        <nav>
+          <Link to="/story/bedtime">🛏 Bedtime</Link> |{' '}
+          <Link to="/story/adventure">🗺 Adventure</Link> |{' '}
+          <Link to="/story/fairy">🧚 Fairy</Link>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<p>Select a story to begin!</p>} />
+          <Route path="/story/bedtime" element={<BedtimeStory />} />
+          <Route path="/story/adventure" element={<AdventureStory />} />
+          <Route path="/story/fairy" element={<FairyStory />} />
+        </Routes>
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App
