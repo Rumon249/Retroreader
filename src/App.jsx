@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <h1 className="title">✨ Y2K Reader ✨</h1>
+        <h1 className="title">✨ Retro Reader ✨</h1>
 
         <nav>
           <Link to="/story/bedtime">🛏 Goldilocks and the Three Bears</Link> |{' '}
