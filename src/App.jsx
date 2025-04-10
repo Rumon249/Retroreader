@@ -3,7 +3,7 @@ import BedtimeStory from './stories/BedtimeStory'
 import AdventureStory from './stories/AdventureStory'
 import FairyStory from './stories/PrincessStory'
 import './App.css'
-import InteractiveStory from './stories/animations' 
+import InteractiveStory from './stories/animations'
 
 
 function App() {
