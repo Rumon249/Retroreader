@@ -5,18 +5,33 @@ function PrincessStory() {
 
   const stories = [
     {
-      title: 'The Rose Garden Ball',
-      image: 'YOUR_IMAGE_URL_HERE',
-      path: '/story/the-rose-garden-ball'
+      title: 'Aladdin',
+      image: 'https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/images/methode/2019/01/19/a5635224-1ad5-11e9-8ff8-c80f5203e5c9_image_hires_061505.jpg?itok=2qlBJyVI&v=1547849714',
+      path: '/story/Aladdin'
     },
     {
-      title: 'Princess Lila and the Star Crown',
-      image: 'YOUR_IMAGE_URL_HERE',
+      title: 'Beauty and the Beast',
+      image: 'https://disney.images.edge.bamgrid.com/ripcut-delivery/v1/variant/disney/7819af4d-404a-47dc-b2cf-ab7f265cecd1?/scale?width=1200&aspectRatio=1.78&format=webp',
       path: '/story/princess-lila'
     },
     {
-      title: 'The Magic Mirror',
-      image: 'YOUR_IMAGE_URL_HERE',
+      title: 'The Princess and The Frog',
+      image: 'https://images.bauerhosting.com/legacy/empire-tmdb/films/10198/images/wC5xdlg6WceCWUXQzS3pIwTfkEJ.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80',
+      path: '/story/the-magic-mirror'
+    },
+    {
+      title: 'The Little Mermaid',
+      image: 'https://m.media-amazon.com/images/M/MV5BMTcxNDM3OTMzOV5BMl5BanBnXkFtZTcwODYxMDIyNw@@._V1_.jpg',
+      path: '/story/Aladdin'
+    },
+    {
+      title: 'Mulan',
+      image: 'https://thenerddaily.com/wp-content/uploads/2019/11/Disney-Mulan.jpg?x36838',
+      path: '/story/princess-lila'
+    },
+    {
+      title: 'Snow White',
+      image: 'https://platform.vox.com/wp-content/uploads/sites/2/2025/03/Vox_MCDSNWH_EC013.jpg?quality=90&strip=all&crop=16.666666666667,0,66.666666666667,100',
       path: '/story/the-magic-mirror'
     }
   ];
