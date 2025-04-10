@@ -1,0 +1,23 @@
+.story-page {
+    background-color: #ffffffaa;
+    padding: 20px;
+    margin-top: 30px;
+    border: 2px dashed #ffccff;
+    border-radius: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .word {
+    cursor: pointer;
+    color: #0066cc;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  
+  .word:hover {
+    color: #ff3399;
+    text-decoration: underline;
+  }
+  
