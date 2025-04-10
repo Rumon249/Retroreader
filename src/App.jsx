@@ -6,7 +6,7 @@ import PageTurn from './PageTurn';
 function App() {
   return (
     <div className="App">
-      <h1>My Animated Storybook 📘</h1>
+      <h1>Goldilocks and the Three Bears 📘</h1>
       <PageTurn />
     </div>
   );
