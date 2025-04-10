@@ -18,6 +18,7 @@ const InteractiveStory = () => {
 
   return (
     <div className="relative p-6 space-x-1">
+    <div className="story-container">
       Not far away, a curious little girl named
       <span
         className="cursor-pointer text-blue-500 underline"
@@ -33,7 +34,7 @@ const InteractiveStory = () => {
             key={trigger} // key ensures it resets on each trigger
             src={Goldilocks}
             alt="Goldilocks"
-            className="absolute top-10 left-1/2 transform -translate-x-1/2 w-40"
+            className="absolute top-10 right- transform -translate-x-1/2 w-40"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 0.2, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
@@ -41,6 +42,7 @@ const InteractiveStory = () => {
           />
         )}
       </AnimatePresence>
+    </div>
     </div>
   );
 };

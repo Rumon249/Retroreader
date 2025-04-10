@@ -2,11 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import BedtimeStory from './stories/BedtimeStory'
 import AdventureStory from './stories/AdventureStory'
 import FairyStory from './stories/FairyStory'
-<<<<<<< HEAD
 import './App.css'
-=======
 import InteractiveStory from './stories/animations' 
->>>>>>> animation
 
 function App() {
   return (
