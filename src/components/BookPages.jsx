@@ -1,12 +1,10 @@
+// src/components/BookPages.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GoldilocksTextpages } from "../stories/goldilocksStory";
 import "./BookPages.css";
 
-const BookPages = () => {
-  const pages = GoldilocksTextpages;
+const BookPages = ({ pages }) => {
   const [pageIndex, setPageIndex] = useState(0);
-
 
   const goNext = () => {
     if (pageIndex < pages.length - 1) {
@@ -24,7 +22,7 @@ const BookPages = () => {
     <div className="book-layout">
       <div className="book">
         <AnimatePresence mode="wait" initial={false}>
-          {/* Left page (static, doesn't move) */}
+          {/* Left page */}
           <motion.div
             key={`left-${pageIndex}`}
             className="page left"
@@ -32,20 +30,22 @@ const BookPages = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 1 }}
           >
-            <p>{pages[pageIndex]}</p>
+            {pages[pageIndex]}
           </motion.div>
 
-          {/* Right page (flip effect, moves from right to left) */}
-          <motion.div
-            key={`right-${pageIndex + 1}`}
-            className="page right"
-            initial={{ rotateY: 90 }} // Start from 90 degrees (facing backwards)
-            animate={{ rotateY: 0 }}  // Rotate to 0 degrees (facing front)
-            exit={{ rotateY: -90 }}   // Rotate to -90 degrees (facing backwards)
-            transition={{ duration: 0.6 }}
-          >
-            <p>{pages[pageIndex + 1]}</p>
-          </motion.div>
+          {/* Right page */}
+          {pageIndex + 1 < pages.length && (
+            <motion.div
+              key={`right-${pageIndex + 1}`}
+              className="page right"
+              initial={{ rotateY: 90 }}
+              animate={{ rotateY: 0 }}
+              exit={{ rotateY: -90 }}
+              transition={{ duration: 0.6 }}
+            >
+              {pages[pageIndex + 1]}
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
 

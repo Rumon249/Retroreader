@@ -7,7 +7,7 @@ function BedtimeStory() {
     {
       title: 'Goldilocks and the Three Bears',
       image: 'https://review.firstround.com/content/images/2056/firstround/blnsblcpqlmvgr2vvnf1_goldilocks-20--20hires.jpg',
-      path: '/story/Goldilocks-and-the-Three-Bears'
+      path: '/story/goldilocks-and-the-three-bears'
     },
     {
       title: 'The Three Little Pigs',
@@ -41,10 +41,9 @@ function BedtimeStory() {
 
   return (
     <div className="story-container">
-      <h2>Bedtime Stories!</h2>
-      <p>Get cozy and drift off with calming bedtime tales.</p>
-      <p>Choose a story below to be immersed in a calming tale ↓</p>
-
+      <h2 className="story-title">Bedtime Stories!</h2>
+      <p className="story-description">Get cozy and drift off with calming bedtime tales.</p>
+      <p className="story-prompt">Choose a story below to be immersed in a calming tale ↓</p>
       <div className="story-grid">
         {stories.map((story, index) => (
           <div

@@ -7,40 +7,40 @@ function AdventureStory() {
     {
       title: 'Peter Pan',
       image: 'https://variety.com/wp-content/uploads/2016/04/peter-pan.jpg',
-      path: '/story/the-lost-map'
+      path: '/story/peter-pan'
     },
     {
       title: 'A Christmas Carol',
       image: 'https://cdn.prod.website-files.com/63c03e257f43688614b2e63f/63fe527dae944cddd900a2a1_ACC%20-%20Show%20Graphic.opt.webp',
-      path: '/story/pirate-pete'
+      path: '/story/a-christmas-carol'
     },
     {
       title: 'Green Eggs and Ham',
       image: 'https://variety.com/wp-content/uploads/2015/03/green-eggs-and-ham-netflix.jpg?w=980&h=551&crop=1',
-      path: '/story/jungle-explorer'
+      path: '/story/green-eggs-and-ham'
     },
     {
       title: 'The Rainbow Fish',
       image: 'https://northsouth.com/wp-content/uploads/2022/06/Der-Regenbogenfisch-1200x560-2-1200x560.jpg',
-      path: '/story/the-lost-map'
+      path: '/story/the-rainbow-fish'
     },
     {
       title: 'The Gingerbread Man',
       image: 'https://i.ytimg.com/vi/YoQyyB5xvLk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB97atfCwHzW63_he1H02HbKrxWEw',
-      path: '/story/pirate-pete'
+      path: '/story/the-gingerbread-man'
     },
     {
       title: 'Thumbelina',
       image: 'https://www.all-about-fairies.com/images/Thumbelina_1.jpg',
-      path: '/story/jungle-explorer'
+      path: '/story/thumbelina'
     }
   ];
 
   return (
     <div className="story-container">
-      <h2>Adventure Stories!</h2>
-      <p>Grab your backpack! These stories are full of quests, treasure, and excitement.</p>
-      <p>Choose an awesome story below to get ready to join an adventure ↓</p>
+      <h2 className="story-title">Adventure Stories!</h2>
+      <p className="story-description">Grab your backpack! These stories are full of quests, treasure, and excitement.</p>
+      <p className="story-prompt">Choose an awesome story below to get ready to join an adventure ↓</p>
 
       <div className="story-grid">
         {stories.map((story, index) => (
