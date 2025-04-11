@@ -1,17 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { GoldilocksTextpages } from "../stories/goldilocksStory";
 import "./BookPages.css";
 
-const pages = [
-  "Once upon a time, in a cozy little cottage...",
-  "Goldilocks went for a walk in the forest...",
-  "She found a house with three bowls of porridge...",
-  "One was too hot, one was too cold, one was just right.",
-  "She sat in the chairs and lay in the beds..."
-];
-
 const BookPages = () => {
+  const pages = GoldilocksTextpages;
   const [pageIndex, setPageIndex] = useState(0);
+
 
   const goNext = () => {
     if (pageIndex < pages.length - 1) {
