@@ -5,6 +5,7 @@ import FairyStory from './stories/PrincessStory';
 import InteractiveStory from './stories/animations';
 import PopUpads from './components/PopUpads';
 import './App.css';
+import StoryPage from './components/StoryPage';
 
 function App() {
   return (
