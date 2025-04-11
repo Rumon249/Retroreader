@@ -17,7 +17,7 @@ function PrincessStory() {
     {
       title: 'The Princess and The Frog',
       image: 'https://images.bauerhosting.com/legacy/empire-tmdb/films/10198/images/wC5xdlg6WceCWUXQzS3pIwTfkEJ.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80',
-      path: '/story/the-magic-mirror'
+      path: '/story/tpatf'
     },
     {
       title: 'The Little Mermaid',
@@ -27,7 +27,7 @@ function PrincessStory() {
     {
       title: 'Mulan',
       image: 'https://thenerddaily.com/wp-content/uploads/2019/11/Disney-Mulan.jpg?x36838',
-      path: '/story/Mulan'
+      path: '/story/mulan'
     },
     {
       title: 'Snow White',
