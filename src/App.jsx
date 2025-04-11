@@ -22,7 +22,7 @@ function App() {
         {/* LEFT SIDE ADS */}
         <div className="popup-stack left">
           <PopUpads gifUrl="https://shortpixel.com/blog/wp-content/uploads/2023/12/nyan-cat.gif" width={200} height={200} />
-          <PopUpads gifUrl="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p2ODF1eHdlbGJxa2dmYzV0eDYyeHoweGRzZHo3aGVtbnR1dHIzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8a3DrjC3CHuso/giphy.gif" width={160} height={240} />
+          <PopUpads gifUrl="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p2ODF1eHdlbGJxa2dmYzV0eDYyeHoweGRzZHo3aGVtbnR1dHIzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8a3DrjC3CHuso/giphy.gif" width={300} height={240} />
           <PopUpads gifUrl="https://media1.tenor.com/m/CQGvY8aF_akAAAAd/download-button.gif" width={400} height={100} />
           <PopUpads gifUrl="https://media1.tenor.com/m/f-xNEbmbDRYAAAAC/pokemon-mewtwo.gif" width={280} height={160} />"
         </div>
