@@ -1,5 +1,5 @@
 .app-container {
-  background-color: #fffaf0;
+  background-color: #ffffff;
   font-family: 'Figtree', serif;
   padding: 40px;
   min-height: 100vh;
@@ -112,7 +112,6 @@ nav a:hover {
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
 .story-container {
   width: 100%;
   max-width: 1000px; /* optional: constrains it so it's not too wide on large screens */
@@ -189,5 +188,3 @@ nav a:hover {
   font-size: 0.8rem;
   z-index: 10000;
 }
-
-

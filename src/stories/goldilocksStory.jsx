@@ -2,6 +2,7 @@
 import { useState } from "react";
 import AnimatedCharacter from "../components/AnimatedCharacter";
 import Goldilocks from "../assets/goldilocks.webp";
+import "./books.css";
 
 const useGoldilocksPages = () => {
   const [trigger, setTrigger] = useState(0);
