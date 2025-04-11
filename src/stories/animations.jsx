@@ -1,6 +1,6 @@
 // src/stories/InteractiveStory.jsx
 import { useState } from "react";
-import Goldilocks from '../assets/goldi_walking.png';
+import Goldilocks from '../assets/goldilocks.webp';
 import AnimatedCharacter from '../components/AnimatedCharacter';
 
 const InteractiveStory = () => {
