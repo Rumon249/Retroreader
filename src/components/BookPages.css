@@ -70,3 +70,8 @@ button:disabled {
   background: #ccc;
   cursor: not-allowed;
 }
+
+.smaller-animation {
+  width: 210px !important;
+  height: auto;
+}
