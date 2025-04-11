@@ -41,10 +41,9 @@ function BedtimeStory() {
 
   return (
     <div className="story-container">
-      <h2>Bedtime Stories!</h2>
-      <p>Get cozy and drift off with calming bedtime tales.</p>
-      <p>Choose a story below to be immersed in a calming tale ↓</p>
-
+      <h2 className="story-title">Bedtime Stories!</h2>
+      <p className="story-description">Get cozy and drift off with calming bedtime tales.</p>
+      <p className="story-prompt">Choose a story below to be immersed in a calming tale ↓</p>
       <div className="story-grid">
         {stories.map((story, index) => (
           <div
