@@ -2,6 +2,7 @@
 import { useState } from "react";
 import AnimatedCharacter from "../components/AnimatedCharacter";
 import Mulan from "../assets/Mulan.gif";
+import "./books.css";
 
 const useMulanPages = () => {
   const [trigger, setTrigger] = useState(0);
@@ -10,7 +11,17 @@ const useMulanPages = () => {
   );
 
   return [
-    <p>When her father was called to war, {highlight("Mulan")} disguised herself as a man.</p>,
+    <p>When her father was called to war, <span
+    className="cursor-pointer text-blue-500 underline"
+    onClick={() => setTrigger(prev => prev + 1)}
+    >
+        &nbsp;{highlight("Mulan")}
+    </span>.
+    <AnimatedCharacter
+        triggerKey={trigger}
+        imageSrc={Mulan}
+        alt="Mulan"
+    />disguised herself as a man.</p>,
     <p>She trained hard, fought bravely, and earned the respect of her fellow soldiers.</p>,
     <p>With courage and wit, she saved the army from a surprise {highlight("Hun")} attack.</p>,
     <p>In battle, her secret was revealed — but her bravery spoke louder than her disguise.</p>,
