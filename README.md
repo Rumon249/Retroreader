@@ -1,12 +1,11 @@
-# React + Vite
+Team O (Yarithe Karim, Aasha Kodukula, Sumedha Budaraju, Sakshi Chavan)
+Retro-Reader !!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+We chose the 'Blast from the Past' topic. Retro Reader doesn’t just look retro — it feels like an old-school website reimagined for today. It celebrates the nostalgia of colorful uis and pop-up chaos, but packages it in a smooth, joyful, animation-driven reading experience for new users. Kids and adults alike can share in the experience of reading children's books on the platform from a variety of genres. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+We coded Retroreader using:
+  1. React + Vite for the component based structure (Java & HTML)
+  2. CSS for styling components
+  3. Framer Motion for animations and popups
+  4. A Canvas API powered mouse trail
+  5. JSX arrays for story pages 
