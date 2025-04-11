@@ -1,6 +1,6 @@
 // src/stories/InteractiveStory.jsx
 import { useState } from "react";
-import Goldilocks from '../assets/goldilocks.webp';
+import Goldilocks from '../assets/goldi_walking.png';
 import AnimatedCharacter from '../components/AnimatedCharacter';
 
 const InteractiveStory = () => {
@@ -15,7 +15,7 @@ const InteractiveStory = () => {
       >
         &nbsp;Goldilocks
       </span>
-      .
+      
 
       <AnimatedCharacter
         triggerKey={trigger}
