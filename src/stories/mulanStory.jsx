@@ -9,39 +9,78 @@ import hero from "../assets/hero.gif";
 import "./books.css";
 
 const useMulanPages = () => {
-  const [triggers, setTriggers] = useState({
-    mulan: 0,
-    trained: 0,
-    attack: 0,
-    disguise: 0,
-    honor: 0,
-    hero: 0,
-  });
-
-  const highlight = (key, label, gif) => (
-    <span style={{ position: "relative", display: "inline-block" }}>
-      <span
-        className="word cursor-pointer text-blue-500 underline font-semibold"
-        onClick={() => setTriggers(prev => ({ ...prev, [key]: prev[key] + 1 }))}
-      >
-        {label}
-      </span>
-      <AnimatedCharacter
-        triggerKey={triggers[key]}
-        imageSrc={gif}
-        alt={label}
-        className="absolute left-full top-1 w-24 ml-4"
-      />
-    </span>
-  );
-
+    const [showMulan, setShowMulan] = useState(false);
+    const [showTrained, setShowTrained] = useState(false);
+    const [showAttack, setShowAttack] = useState(false);
+    const [showDisguise, setShowDisguise] = useState(false);
+    const [showHonor, setShowHonor] = useState(false);
+    const [showHero, setShowHero] = useState(false);
+  
+    const highlight = (text, onClick) => (
+      <span className="word" onClick={onClick}>{text}</span>
+    );
   return [
-    <p>When her father was called to war, {highlight("mulan", "Mulan", Mulan)} disguised herself as a man.</p>,
-    <p>She {highlight("trained", "trained", trained)} hard, fought bravely, and earned the respect of her fellow soldiers.</p>,
-    <p>With courage and wit, she saved the army from a surprise Hun {highlight("attack", "attack", attack)}.</p>,
-    <p>In battle, her secret was revealed — but her bravery spoke louder than her {highlight("disguise", "disguise", disguise)}.</p>,
-    <p>She defeated Shan Yu and brought {highlight("honor", "honor", honor)} to her name and her family.</p>,
-    <p>At home, she was welcomed not as a soldier — but as a true {highlight("hero", "hero", hero)}.</p>,
+    <p>When her father was called to war, {" "}
+    {highlight("Mulan", () => setShowMulan(true))}, disguised herself as a man.
+    {showMulan && (
+        <AnimatedCharacter
+            imageSrc={Mulan}
+            alt = "Mulan"
+            className = "smaller-animation"
+        />
+    )}
+    </p>,
+    <p>She {" "}
+    {highlight("trained", () => setShowTrained(true))} hard, fought bravely, and earned the respect of her fellow soldiers.
+    {showTrained && (
+        <AnimatedCharacter
+            imageSrc={trained}
+            alt = "trained"
+            className = "smaller-animation"
+        />
+    )}
+    </p>,
+    <p>With courage and wit, she saved the army from a surprise Hun {" "} 
+    {highlight("attack", () => setShowAttack(true))}
+    .
+    {showAttack && (
+        <AnimatedCharacter
+            imageSrc={attack}
+            alt = "attack"
+            className = "smaller-animation"
+        />
+    )}
+    </p>,
+    <p>In battle, her secret was revealed — but her bravery spoke louder than her {" "}
+    {highlight("disguise", () => setShowDisguise(true))}
+    .
+    {showDisguise && (
+        <AnimatedCharacter
+            imageSrc={disguise}
+            alt = "disguise"
+            className = "smaller-animation"
+        />
+    )}
+    </p>,
+    <p>She defeated Shan Yu and brought {" "}
+    {highlight("honor", () => setShowHonor(true))} to her name and her family.
+    {showHonor && (
+        <AnimatedCharacter
+            imageSrc={honor}
+            alt = "honor"
+            className = "smaller-animation"
+        />
+    )}
+    </p>,
+    <p>At home, she was welcomed not as a soldier — but as a true {" "}{highlight("hero", () => setShowHero(true))}.
+    {showHero && (
+        <AnimatedCharacter
+            imageSrc={hero}
+            alt = "hero"
+            className = "smaller-animation"
+        />
+    )}
+    </p>,
   ];
 };
 
