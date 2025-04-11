@@ -1,12 +1,23 @@
-// src/App.jsx
-import React from 'react';
-import './App.css';
-import PageTurn from './PageTurn';
+import { useState } from "react";
+import BookCover from "./components/BookCover";
+import BookPages from "./components/BookPages";
 
 function App() {
+  const [bookOpen, setBookOpen] = useState(false);
+
+  const handleOpenBook = () => {
+    setBookOpen(true);
+  };
+
+  const showCover = !bookOpen;
+
   return (
-    <div className="App">
-      <PageTurn />
+    <div className="app-container">
+      {showCover ? (
+        <BookCover onOpen={handleOpenBook} />
+      ) : (
+        <BookPages />
+      )}
     </div>
   );
 }

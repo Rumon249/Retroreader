@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffbff9; /* light pink */
+  padding-left: 100% ;
+  padding-right: 100%;
+}
+
+
