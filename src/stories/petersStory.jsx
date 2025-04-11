@@ -4,11 +4,13 @@ import Peterpan from "../assets/Peterpan.gif";
 import battle from "../assets/battle.gif";
 import neverland from "../assets/neverland.png";
 import Hook from "../assets/cap hook.gif";
+import lostboys from "../assets/lost boys.gif";
 import "./books.css";
 
 const usePanPages = () => {
   const [showPeter, setShowPeter] = useState(false);
   const [showNeverland, setShowNeverland] = useState(false);
+  const [showLostBoys, setShowLostBoys] = useState(false);
   const [showHook, setShowHook] = useState(false);
   const [showBattle, setShowBattle] = useState(false);
 
@@ -42,8 +44,15 @@ const usePanPages = () => {
     </p>,
 
     <p>
-      They met the {highlight("Lost Boys")} and soared through the skies with pixie
+      They met the {highlight("Lost Boys", () => setShowLostBoys(true))} and soared through the skies with pixie
       dust and dreams.
+      {showLostBoys && (
+        <AnimatedCharacter
+        imageSrc={lostboys}
+        alt="Lost Boys"
+        className="smaller-animation"
+        />
+      )}
     </p>,
 
     <p>
