@@ -1,5 +1,5 @@
 .app-container {
-  background-color: #ffffff;
+  background-color: #e685f5;
   font-family: 'Figtree', serif;
   padding: 40px;
   min-height: 100vh;
@@ -187,4 +187,16 @@ nav a:hover {
   font-weight: bold;
   font-size: 0.8rem;
   z-index: 10000;
+}
+
+.highlighted-word {
+  color: #d63384;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  transition: color 0.3s;
+}
+
+.highlighted-word:hover {
+  color: #a0005c;
 }
