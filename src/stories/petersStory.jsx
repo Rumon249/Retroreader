@@ -10,7 +10,7 @@ const usePanPages = () => {
   );
 
   return [
-    <p>One starry night in London, Wendy and her brothers met a flying boy named {highlight("Peter Pan")}.</p>,
+    <p>One starry night in London, Wendy and her brothers met a flying boy named {highlight("Peter Pan")} .</p>,
     <p>He whisked them off to {highlight("Neverland")}, a place of pirates, fairies, and adventure.</p>,
     <p>They met the {highlight("Lost Boys")} and soared through the skies with pixie dust and dreams.</p>,
     <p>Captain {highlight("Hook")} and his crew plotted revenge, fearing the tick-tock of the crocodile.</p>,
