@@ -12,7 +12,7 @@ function PrincessStory() {
     {
       title: 'Beauty and the Beast',
       image: 'https://disney.images.edge.bamgrid.com/ripcut-delivery/v1/variant/disney/7819af4d-404a-47dc-b2cf-ab7f265cecd1?/scale?width=1200&aspectRatio=1.78&format=webp',
-      path: '/story/princess-lila'
+      path: '/story/beauty-and-the-beast'
     },
     {
       title: 'The Princess and The Frog',
@@ -22,7 +22,7 @@ function PrincessStory() {
     {
       title: 'The Little Mermaid',
       image: 'https://m.media-amazon.com/images/M/MV5BMTcxNDM3OTMzOV5BMl5BanBnXkFtZTcwODYxMDIyNw@@._V1_.jpg',
-      path: '/story/TheLittleMermaid'
+      path: '/story/The-Little-Mermaid'
     },
     {
       title: 'Mulan',
@@ -32,7 +32,7 @@ function PrincessStory() {
     {
       title: 'Snow White',
       image: 'https://platform.vox.com/wp-content/uploads/sites/2/2025/03/Vox_MCDSNWH_EC013.jpg?quality=90&strip=all&crop=16.666666666667,0,66.666666666667,100',
-      path: '/story/SnowWhite'
+      path: '/story/Snow-White'
     }
   ];
 
