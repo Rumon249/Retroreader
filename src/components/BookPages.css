@@ -1,0 +1,71 @@
+/* src/components/BookPages.css */
+
+.book-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8c6d8; /* 🍓 Light pink */
+  position: sticky;
+  margin-right: 40%;
+  width: 180%;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px; /* Important for 3D effect */
+  gap: 20px;
+}
+
+.page {
+  width: 300px;
+  height: 400px;
+  background-color: #fff3db;
+  border: 2px solid #d2a679;
+  padding: 20px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backface-visibility: hidden; /* Hide the back of the page */
+  text-align: center;
+
+  /* Text styles */
+  font-family: 'Arial', sans-serif; /* Change to any font you like */
+  color: #6b3e26; /* Change to your preferred text color */
+  text-align: center; /* Center align the text */
+}
+
+.left {
+  transform-origin: right center; /* Pivot on the right edge */
+}
+
+.right {
+  transform-origin: left center; /* Pivot on the left edge */
+}
+
+.nav-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: #d2a679;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
