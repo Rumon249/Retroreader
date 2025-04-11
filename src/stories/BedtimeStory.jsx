@@ -7,7 +7,7 @@ function BedtimeStory() {
     {
       title: 'Goldilocks and the Three Bears',
       image: 'https://review.firstround.com/content/images/2056/firstround/blnsblcpqlmvgr2vvnf1_goldilocks-20--20hires.jpg',
-      path: '/story/Goldilocks-and-the-Three-Bears'
+      path: '/story/goldilocks-and-the-three-bears'
     },
     {
       title: 'The Three Little Pigs',
