@@ -7,7 +7,7 @@ import useGoldilocksPages from "../stories/goldilocksStory";
 
 const storyMap = {
   "Goldilocks-and-the-Three-Bears": useGoldilocksPages,
-  // Add more stories here...
+  "Peter-Pan": usePanPages,
 };
 
 const StoryPage = () => {

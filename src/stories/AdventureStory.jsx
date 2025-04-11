@@ -7,7 +7,7 @@ function AdventureStory() {
     {
       title: 'Peter Pan',
       image: 'https://variety.com/wp-content/uploads/2016/04/peter-pan.jpg',
-      path: '/story/the-lost-map'
+      path: '/story/peter-pan'
     },
     {
       title: 'A Christmas Carol',
