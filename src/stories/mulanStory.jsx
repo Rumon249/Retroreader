@@ -2,6 +2,7 @@
 import { useState } from "react";
 import AnimatedCharacter from "../components/AnimatedCharacter";
 import Mulan from "../assets/Mulan.gif";
+import "./books.css";
 
 const useMulanPages = () => {
   const [trigger, setTrigger] = useState(0);

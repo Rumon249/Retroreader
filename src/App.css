@@ -112,7 +112,6 @@ nav a:hover {
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
 .story-container {
   width: 100%;
   max-width: 1000px; /* optional: constrains it so it's not too wide on large screens */
@@ -139,7 +138,6 @@ nav a:hover {
   font-size: 1.2rem;
   text-align: center;
 }
-=======
 
 /* Container for side-stacked ads */
 .popup-stack {
@@ -191,4 +189,3 @@ nav a:hover {
   z-index: 10000;
 }
 
->>>>>>> 3d82924f8231e0e352b4f7adecd2df4444e3f000
