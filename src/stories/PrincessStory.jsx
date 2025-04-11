@@ -22,17 +22,17 @@ function PrincessStory() {
     {
       title: 'The Little Mermaid',
       image: 'https://m.media-amazon.com/images/M/MV5BMTcxNDM3OTMzOV5BMl5BanBnXkFtZTcwODYxMDIyNw@@._V1_.jpg',
-      path: '/story/Aladdin'
+      path: '/story/TheLittleMermaid'
     },
     {
       title: 'Mulan',
       image: 'https://thenerddaily.com/wp-content/uploads/2019/11/Disney-Mulan.jpg?x36838',
-      path: '/story/princess-lila'
+      path: '/story/Mulan'
     },
     {
       title: 'Snow White',
       image: 'https://platform.vox.com/wp-content/uploads/sites/2/2025/03/Vox_MCDSNWH_EC013.jpg?quality=90&strip=all&crop=16.666666666667,0,66.666666666667,100',
-      path: '/story/the-magic-mirror'
+      path: '/story/SnowWhite'
     }
   ];
 
