@@ -1,5 +1,6 @@
 Team O (Yarithe Karim, Aasha Kodukula, Sumedha Budaraju, Sakshi Chavan)
-Retro-Reader !!
+
+** Retro-Reader !! **
 
 We chose the 'Blast from the Past' topic. Retro Reader doesn’t just look retro, but it feels like an old-school website reimagined for today. It celebrates the nostalgia of colorful uis and pop-up chaos, and packages it in a smooth, joyful, animation-driven reading experience for new users. Kids and adults alike can share in the experience of reading children's books on the platform from a variety of genres with unique animations for certain highlighted words. 
 
