@@ -34,7 +34,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<p>Select a story to begin!</p>} />
-          <Route path="/story/bedtime" element={<Goldilocks />} />
+          <Route path="/story/bedtime" element={<BedtimeStory />} />
           <Route path="/story/adventure" element={<AdventureStory />} />
           <Route path="/story/fairy" element={<FairyStory />} />
           <Route path="/story/animations" element={<InteractiveStory />} />
