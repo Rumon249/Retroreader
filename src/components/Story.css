@@ -20,4 +20,21 @@
     color: #ff3399;
     text-decoration: underline;
   }
+
+  .story-container {
+    width: 100%;
+    max-width: 1000px; /* optional: constrains it so it's not too wide on large screens */
+    margin-right: 100%;    /* ← this is what will move it to the right */
+    margin-top: 2rem;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .story-container h2,
+  .story-container > p {
+    margin-left: 50%;
+    text-align: left;
+  }
+  
+  
   

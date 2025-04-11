@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
+
 function PrincessStory() {
   const navigate = useNavigate();
 
@@ -38,9 +39,9 @@ function PrincessStory() {
 
   return (
     <div className="story-container">
-      <h2>Princess Stories!</h2>
-      <p>Get ready to read some fun and fabulous princess stories!</p>
-      <p>Choose an enchanted story below to bring your fantasies to life ↓</p>
+      <h2 className="story-title">Princess Stories!</h2>
+      <p className="story-description">Get ready to read some fun and fabulous princess stories!</p>
+      <p className="story-prompt">Choose an enchanted story below to bring your fantasies to life ↓</p>
 
       <div className="story-grid">
         {stories.map((story, index) => (

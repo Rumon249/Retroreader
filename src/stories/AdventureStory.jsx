@@ -38,9 +38,9 @@ function AdventureStory() {
 
   return (
     <div className="story-container">
-      <h2>Adventure Stories!</h2>
-      <p>Grab your backpack! These stories are full of quests, treasure, and excitement.</p>
-      <p>Choose an awesome story below to get ready to join an adventure ↓</p>
+      <h2 className="story-title">Adventure Stories!</h2>
+      <p className="story-description">Grab your backpack! These stories are full of quests, treasure, and excitement.</p>
+      <p className="story-prompt">Choose an awesome story below to get ready to join an adventure ↓</p>
 
       <div className="story-grid">
         {stories.map((story, index) => (
